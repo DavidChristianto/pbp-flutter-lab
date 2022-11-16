@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:counter_7/form.dart';
+import 'package:counter_7/data.dart';
+import 'package:counter_7/drawer.dart';
 
 void main() {
   runApp(const ProviderScope(
@@ -36,6 +39,7 @@ final counterStateProvider3 = StateProvider<Color>((ref) {
 });
 
 class MyHomePage extends ConsumerWidget {
+  const MyHomePage({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var value = ref.watch(counterStateProvider);
@@ -45,6 +49,7 @@ class MyHomePage extends ConsumerWidget {
         appBar: AppBar(
           title: Text('Counter Program'),
         ),
+        drawer: drawer(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
