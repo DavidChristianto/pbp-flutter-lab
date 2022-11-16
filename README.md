@@ -49,6 +49,63 @@ The Const keyword in Dart behaves exactly like the final keyword. The only diffe
 9. git add, commit, push
 10. Answer the readme.md
 
+## =============== ASSIGNMENT 7 ===============
+
+## 1. Explain the difference between Navigator.push and Navigator.pushReplacement.
+## Answer:
+Navigator.push and Navigator.pushReplacement are included in Flutter navigation routing. The main difference between the two is
+
+a.Navigator.push (): This is a push method that is used to add another route to the top of the current screen stack (stack), so that the new page is displayed above the previous page.
+
+b. Navigator.pushReplacement : Is a push method that adds a new route to the navigation stack and will delete the current route by removing the previous route once added.
+
+## 2. List all the widgets you used in this project and explain their functions.
+## Answer: 
+a. Stateless Widget for construct UI (user interface)
+b. myApp have role as root of Widget
+c. StatefulWidget for makes the buttons and the logic
+d. appBar as navbar in the app
+e. Scaffold for create the structure layout visually
+f. Center for adjust the position child in the center of parent
+g. Column for arrange layout Widget vertically
+h. Row for arrange layout Widget horizontally
+i. Container for wrapp the elements and add it to margin
+j. FloatingActionButton for adding the button
+k. Text for makes the texts
+l. Drawer is a widget that provides a menu that can be pulled out by click the icon
+m. Padding is a wrapper that provides padding properties
+n. Form has the ability to validate and save their contents and contains inputs
+o. TextFormField is kind of form for textfield
+p. Dropdown button for make dropdown form
+q. Navigator have functions for manages page using stack
+
+## 3. Name the types of events that exist in Flutter 
+## Answer:
+a. onPressed is using for handle the case of pressing button
+b. onSaved is to handle the event that call the method  when the form saved via FormState.save
+c. onChanged is to handle the event where the contents of widget changes
+d. onEditingComplete is an event to handle when user submits the editable contents
+e. onTap is an event where a widget is tapped
+
+## 4. Explain how the Navigator works in "switching" pages of a Flutter application.
+## Answer:
+Navigator works to manage elements with routes that display content pages in flutter.
+
+The navigator itself consists of 3 parts, namely the stack, the pop method which will remove the topmost section and the navigation will display the previous page, and the push method which will navigate to a new page.
+
+in simple terms this is the mechanism of how the navigator works in page switches in flutter.
+
+## 5. Explain how you implemented the checking list above.
+## Answer:
+1. run set path on terminal
+2. open android studio to edit counter_7
+3. add new file in lib which is form.dart for adding budget info and data.dart for budget data, also drawer.dart
+4. adding code in the lab for the form.dart and use static method to load data into data.dart and also adding date picker form google(https://api.flutter.dev/flutter/material/showDatePicker.html)
+5. make card widget in data.dart
+6. adding listtile in drawer.dart using code in the lab
+7. do readme
+8. git add, commit, push.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
