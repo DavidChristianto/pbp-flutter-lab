@@ -23,7 +23,7 @@ class _MyDataPageState extends State<MyDataPage> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListTile(
-              title: Text('${Data.title[i]}'),
+              title: Text('${Data.title[i]}', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35)),
               trailing: Text('${Data.Time[i]}'),
             ),
             ListTile(
