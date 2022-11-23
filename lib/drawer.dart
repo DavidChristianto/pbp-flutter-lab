@@ -1,3 +1,4 @@
+import 'package:counter_7/mywatchlist.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/form.dart';
@@ -44,6 +45,16 @@ class drawer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const MyDataPage()),
               );
               },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+              // Routing the menu to the form page
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
+              );
+            },
           ),
         ],
       ),
