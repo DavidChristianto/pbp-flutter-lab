@@ -61,7 +61,7 @@ class _MyWatchlistState extends State<MyWatchlistPage> {
                   return Column(
                     children: const [
                       Text(
-                        "To do list is empty :(",
+                        "My Watchlist list is empty :(",
                         style: TextStyle(
                             color: Color(0xff59A5D8),
                             fontSize: 20),
