@@ -49,7 +49,7 @@ The Const keyword in Dart behaves exactly like the final keyword. The only diffe
 9. git add, commit, push
 10. Answer the readme.md
 
-## =============== ASSIGNMENT 7 ===============
+## =============== ASSIGNMENT 8 ===============
 
 ## 1. Explain the difference between Navigator.push and Navigator.pushReplacement.
 ## Answer:
@@ -106,6 +106,46 @@ in simple terms this is the mechanism of how the navigator works in page switche
 7. do readme
 8. git add, commit, push.
 
+## =============== ASSIGNMENT 9 ===============
+
+## 1. Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
+## Answer:
+In my opinion, we can still retrieve Json data without having to make a model first (for example using a global variable), but it is advisable to create a model first with the consideration of simplifying the syntax and also making the code structure better organized
+
+## 2. List the widgets that you used in this project and explain their functions.
+## Answer:
+a. Stateless Widget for construct UI (user interface)
+b. myApp have role as root of Widget
+c. StatefulWidget for makes the buttons and the logic
+d. appBar as navbar in the app
+e. Scaffold for create the structure layout visually
+f. Center for adjust the position child in the center of parent
+g. Column for arrange layout Widget vertically
+h. Row for arrange layout Widget horizontally
+i. Container for wrapp the elements and add it to margin
+j. ListView for construct the list of widget
+k. Text for makes the texts
+l. Drawer is a widget that provides a menu that can be pulled out by click the icon
+m. Padding is a wrapper that provides padding properties
+n. Form has the ability to validate and save their contents and contains inputs
+o. Dropdown button for make dropdown form
+p. Navigator have functions for manages page using stack
+q. FutureBuilder is a widget for create based on future snapshots
+
+## 3. Explain the mechanism of retrieving data from json so it can be shown in Flutter.
+## Answer:
+a. create models.dart that wiil convert json object
+b. Use function to retrieve the data using http get and convert the obtained data to models.dart and store it into data structure(like list)
+c. Last, display the data using listview.builder
+
+## 4. Explain how you implemented the checklist above.
+## Answer:
+a. add mywatchlist.dart in lib
+b. add mmodels.dart in lib
+c. code the file(data and mywatchlist) to satisfy the assignments, also run flutter pub and hhtp, and get the json data from heroku
+d. create detail_mywatchlist
+e. do readme
+f. git add, commit, push
 ## Getting Started
 
 This project is a starting point for a Flutter application.
