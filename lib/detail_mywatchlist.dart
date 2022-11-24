@@ -20,9 +20,8 @@ class DetailMywatchlist extends StatelessWidget {
       drawer: drawer(),
       body: Column(
         children: [
-          // Adding clickable menu
-          ListTile(
-            leading: Text('${model.title}', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35)),
+          Align(
+            alignment: Alignment.center, child: Text('${model.title}',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35)),
           ),
           ListTile(
             leading: Text('Release Date :', style: TextStyle(fontWeight: FontWeight.bold)),
